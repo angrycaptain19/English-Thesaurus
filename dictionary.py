@@ -7,8 +7,7 @@ data = json.load(open("data.json"))
 
 # get input from user
 def get_Input():
-    search_word = input('<<<<<< Enter a Word >>>>>>\n').lower()
-    return search_word
+    return input('<<<<<< Enter a Word >>>>>>\n').lower()
 
 
 # search the dictionary to find the translation for the given word
@@ -39,7 +38,6 @@ while True:
     choice = input('\nDo you want to try again?\nIf yes, press "Y"\nIf no, press "N"\n').lower()
     if choice == 'y':
         continue
-    else:
-        print("HAVE A GOOD DAY!")
-        break
+    print("HAVE A GOOD DAY!")
+    break
 
